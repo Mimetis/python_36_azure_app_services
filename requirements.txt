@@ -1,3 +1,5 @@
 --find-links wheelhouse
 Flask<1
 pandas
+scikit-learn
+keras

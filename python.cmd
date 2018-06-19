@@ -86,6 +86,7 @@ call :SelectPythonVersion
 pushd "%DEPLOYMENT_TARGET%"
 
 echo Python install Wheels
+%PYTHON_EXE% -m pip install --upgrade pip
 %PYTHON_EXE% -m pip install wheel
 
 echo Python  Wheels install wheelhouse repository

@@ -92,8 +92,8 @@ echo Python install Wheels
 echo Python  Wheels install wheelhouse repository
 %PYTHON_EXE% -m pip wheel -r %DEPLOYMENT_TARGET%\requirements.txt -w wheelhouse
 
-REM echo Python install requirements.
-REM %PYTHON_EXE% -m pip install --upgrade -r %DEPLOYMENT_TARGET%\requirements.txt
+echo Python install requirements.
+%PYTHON_EXE% -m pip install --upgrade -r %DEPLOYMENT_TARGET%\requirements.txt
 
 IF !ERRORLEVEL! NEQ 0 goto error
 

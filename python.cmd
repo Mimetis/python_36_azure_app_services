@@ -89,7 +89,7 @@ echo Python install Wheels
 %PYTHON_EXE% -m pip install wheel
 
 echo Python  Wheels install wheelhouse repository
-%PYTHON_EXE% -m pip wheel install -r %DEPLOYMENT_TARGET%\requirements.txt -m wheelhouse
+%PYTHON_EXE% -m pip wheel install -r %DEPLOYMENT_TARGET%\requirements.txt -w wheelhouse
 
 REM echo Python install requirements.
 REM %PYTHON_EXE% -m pip install --upgrade -r %DEPLOYMENT_TARGET%\requirements.txt
